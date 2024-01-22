@@ -11,7 +11,7 @@ def main():
         return socket.gethostname()
     if request.method == 'POST':
         subprocess.Popen(['python3', 'stress_cpu.py'])
-        return 200
+        return "200"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
