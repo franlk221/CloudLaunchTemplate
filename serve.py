@@ -7,7 +7,6 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET','POST'])
 def main():
-    global seed
     if request.method == 'GET':
         return socket.gethostname()
     if request.method == 'POST':
